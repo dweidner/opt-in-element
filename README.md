@@ -53,7 +53,8 @@ Make sure you include the `<script>` in your project (choose one of these):
 
 ```html
 <!-- 3rd party CDN, not recommended for production use -->
-<script type="module" src="https://www.unpkg.com/@dweidner/opt-in-element@1.0.0/src/opt-in.js"></script>
+<script type="module" src="https://www.unpkg.com/@dweidner/opt-in-element@1.0.0"></script>
+```
 
 ```html
 <!-- 3rd party CDN, not recommended for production use -->
