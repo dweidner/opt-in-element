@@ -21,8 +21,8 @@ FROM base as development
 ENV NODE_ENV="development"
 
 RUN --mount=type=bind,source=package.json,target=package.json \
-    --mount=type=cache,target=/root/.npm \
-    npm install --include=dev
+    --mount=type=cache,target=/home/node/.npm \
+    npm install --cache /home/node/.npm --include=dev
 
 EXPOSE 8080
 

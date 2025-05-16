@@ -57,7 +57,6 @@ export class Store {
   }
 
   /**
-   * @param {string} item
    * @returns {this}
    */
   clear() {

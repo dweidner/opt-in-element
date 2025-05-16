@@ -67,6 +67,10 @@ export class OptIn extends HTMLElement {
     this.form?.addEventListener('submit', this.handleFormSubmit);
   }
 
+  disconnectedCallback() {
+    this.form?.addEventListener('submit', this.handleFormSubmit);
+  }
+
   showContent() {
     this.appendChild(this.template.content.cloneNode(true));
 
@@ -106,7 +110,7 @@ export class OptIn extends HTMLElement {
     const customElement = customElements.get(tagName);
 
     if (customElement && customElement !== this) {
-      console.warn(`<${tagName}> already defined as ${customElement.name}`)
+      console.warn(`<${tagName}> already defined as ${customElement.name}`);
       return;
     }
 
