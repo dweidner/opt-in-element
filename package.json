@@ -1,0 +1,26 @@
+{
+  "name": "@dweidner/opt-in-element",
+  "description": "A custom element to embed third party content with user consent",
+  "homepage": "https://github.com/dweidner/opt-in-element#readme",
+  "license": "ISC",
+  "version": "1.0.0",
+  "main": "src/opt-in.js",
+  "author": {
+    "name": "Daniel Weidner",
+    "email": "hallo@danielweidner.de",
+    "url": "https://danielweidner.de/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dweidner/opt-in-element.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dweidner/opt-in-element/issues"
+  },
+  "scripts": {
+    "start": "npx http-server ."
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

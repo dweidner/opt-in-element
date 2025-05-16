@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Demo of opt-in Web Component" />
+    <title>opt-in Web Component Demo</title>
+
+    <script type="module" src="./src/opt-in.js"></script>
+  </head>
+  <body>
+    <h2>
+      General usage example
+    </h2>
+
+    <opt-in service="youtube">
+      <form data-dialog>
+        <h2>
+          We need your consent to embed YouTube videos!
+        </h2>
+
+        <p>
+          We use YouTube to embed videos which may collect data about your
+          activity. Please review the <a href="/privacy-policy">details</a>
+          and accept the service to see this content.
+        </p>
+
+        <label>
+          <input type="checkbox" name="remember">
+          Always show content from YouTube
+        </label>
+
+        <button type="submit">
+          Accept
+        </button>
+      </form>
+
+      <template data-content>
+        <iframe
+          src="https://www.youtube.com/embed/aqz-KE-bpKQ?si=FD-cXAd08ecXxx_F"
+          width="560"
+          height="315"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </template>
+    </opt-in>
+  </body>
+</html>
