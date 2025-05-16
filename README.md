@@ -1,4 +1,4 @@
-# Opt-In Element
+# `<opt-in>`
 
 A custom element to embed third party content with user consent.
 
