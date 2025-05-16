@@ -7,10 +7,7 @@ A custom element to embed third party content with user consent.
 ## Examples
 
 ```html
-  <!-- Note: requires `type="module"` -->
-  <script type="module" src="opt-in.js"></script>
-
-  <!-- template as direct child -->
+  <!-- Use a template as direct child of the component -->
   <opt-in service="youtube">
     <form data-dialog>
       <!-- Form HTML omitted for brevity -->
@@ -20,8 +17,10 @@ A custom element to embed third party content with user consent.
       <iframe src="https://www.youtube.com/…"></iframe>
     </template>
   </opt-in>
+```
 
-  <!-- external template element -->
+```html
+  <!-- Use an external template element -->
   <opt-in service="youtube" template="youtube-video">
     <form data-dialog>
       <!-- Form HTML omitted for brevity -->
