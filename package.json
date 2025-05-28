@@ -3,7 +3,7 @@
   "description": "A custom element to embed third party content with user consent",
   "homepage": "https://github.com/dweidner/opt-in-element#readme",
   "license": "ISC",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "main": "src/opt-in.js",
   "author": {
